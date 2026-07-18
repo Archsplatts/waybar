@@ -1,0 +1,175 @@
+@import "colors.css";
+
+* {
+    border: none;
+    font-family: UbuntuMono Nerd Font, Font Awesome;
+    font-size: 16px;
+    min-height: 0;
+	margin: 0px;
+    padding: 0px;
+}
+
+window#waybar {
+    background: rgba(40, 96, 218, 0.9);
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
+   	color: @text;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+tooltip {
+    background-color: @base;
+    border: 1px solid @surface1;
+    border-radius: 6px;
+}
+
+tooltip label {
+    color: @text;
+    margin: 4px;
+    padding: 4px;
+}
+
+label:focus {
+    background-color: @mantle;
+}
+
+#tray {
+	background: #1499EE;
+    padding: 0px 8px;
+}
+
+#custom-menu {
+	background: #1A931F;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: @text;
+	padding-left: 5px;
+	padding-right: 14px;
+	font-size: 22px;
+}
+
+#custom-start {
+	background: #1A931F;
+	color: @text;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 800;
+	padding-right: 20px;
+}
+
+#custom-updates {
+	background: #2860da;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	padding: 0px 12px;
+	padding-left: 6px;
+}
+
+#custom-updates.has-updates {
+	color: @green;
+}
+
+#custom-updates.updated {
+	color: @text;
+}
+
+#workspaces {
+	background: transparent;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#workspaces button {
+    background: transparent;
+    color: @overlay1;
+    border-radius: 4px;
+    margin: 4px 2px;
+    padding: 0px;
+    padding-right: 5px;
+    min-width: 18px;
+}
+
+#workspaces button.active {
+    color: @blue;
+    background: transparent;
+    font-weight: 700;
+}
+
+#workspaces button.urgent {
+    background: transparent;
+    color: @red;
+    font-weight: 700;
+}
+
+#mode {
+    background-color: @base;
+    box-shadow: inset 0 -2px @text;
+}
+
+#tray menu {
+    background-color: @surface0;
+    border: 1px solid @surface1;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 15px;
+}
+
+#tray menu menuitem {
+    background-color: transparent;
+    color: @text;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+#tray menu menuitem:hover {
+    background-color: transparent;
+    color: @blue;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @mantle;
+}
+
+#taskbar {
+	background: rgba(40, 96, 218, 0.6);
+	margin-left: 10px;
+}
+
+#taskbar button {
+	padding: 0 5px;
+}
+
+#clock {
+	background: #1499EE;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: @text;
+    font-weight: 500;
+    padding: 0px 8px;
+}
+
+#pulseaudio {
+	background: #1499EE;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: @text;
+	padding: 0px 8px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#pulseaudio.muted {
+    color: @red;
+    font-weight: 600;
+}
+
+@keyframes blink {
+    to {
+        background-color: @mantle;
+        color: @text;
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"custom/menu": {
+		"format": "",
+		"on-click": "rofi -show drun -config $HOME/.config/rofi/applications-menu.rasi",
+		"tooltip": false
+	},
+
+	"custom/start": {
+		"format": "start",
+		"on-click": "rofi -show drun -config $HOME/.config/rofi/applications-menu.rasi",
+		"tooltip": false
+	},
+
+	"group/start": {
+		"orientation": "horizontal",
+		"modules": ["custom/menu","custom/start"]
+	}
+}	
