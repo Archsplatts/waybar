@@ -1,0 +1,7 @@
+{
+	"custom/system-infos": {
+		"format": "",
+		"on-click": "foot --hold fastfetch",
+		"tooltip": false
+	}
+}
