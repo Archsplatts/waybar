@@ -1,9 +1,0 @@
-{
-	"custom/weather": {
-	    "interval": 3600,
-	    "exec": "wttrbar --location Montlucon",
-	    "return-type": "json",
-	    "format": "{}",
-	    "tooltip": true
-	}
-}
