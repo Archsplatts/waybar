@@ -1,0 +1,25 @@
+{
+	"custom/gear": {
+		"format": "",
+		"on-click": "$HOME/.config/rofi/scripts/mango-menu-config",
+		"tooltip": false
+	},
+
+	"custom/home": {
+		"format": "",
+		"on-click": "thunar",
+		"tooltip": false
+	},
+
+	"custom/browser": {
+		"format": "󰈹",
+		"on-click": "brave-origin",
+		"tooltip": false
+	},
+
+	"custom/steam": {
+		"format": "",
+		"on-click": "steam",
+		"tooltip": false
+	}
+}

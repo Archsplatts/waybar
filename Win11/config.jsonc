@@ -1,0 +1,15 @@
+{
+	"include": ["$HOME/.config/mango/waybar/modules/*.jsonc"],
+
+	"layer": "top",
+	"position": "bottom",
+	"height": 48,
+	"spacing": 0,
+	"reload_style_on_change": true,
+	
+	"modules-left": ["ext/workspaces"],
+
+	"modules-center": ["custom/gear","custom/home","custom/menu","custom/browser","custom/steam"],
+	
+	"modules-right": ["tray","pulseaudio","network","clock"],
+}
