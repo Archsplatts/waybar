@@ -26,7 +26,5 @@
 		"custom/circle8",
 		"wlr/taskbar",
 		"tray",
-		"custom/system-infos", 
-		"network",
-		"custom/power"],
+		"network"]
 }
