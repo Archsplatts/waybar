@@ -1,18 +1,14 @@
 @import "colors.css";
 
 * {
-    border: none;
     font-family: UbuntuMono Nerd Font, Font Awesome;
     font-size: 16px;
+    font-weight: 600;
     min-height: 0;
-	margin: 0px;
-    padding: 0px;
 }
 
 window#waybar {
     background: rgba(30, 30, 46, 0.9);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-   	color: @text;
 }
 
 tooltip {
@@ -32,25 +28,25 @@ label:focus {
 }
 
 #tray {
-	background: transparent;
     padding: 0px 8px;
 }
 
-#custom-updates {
-	background: @surface0;
-	color: @green;
+#workspaces,#custom-gear,#custom-home,#custom-menu,#custom-browser,#custom-steam,#custom-updates,
+#tray,#pulseaudio,#network,#clock {
+	background: transparent;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#custom-updates {
 	padding: 0px 12px;
 	padding-left: 6px;
 }
 
-#workspaces {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+#custom-updates.has-updates {
+	color: @green;
 }
 
 #workspaces button {
-    background: transparent;
     color: @overlay1;
     border-radius: 4px;
     margin: 4px 2px;
@@ -61,31 +57,26 @@ label:focus {
 
 #workspaces button.active {
     color: @blue;
-    background: transparent;
-    font-weight: 700;
 }
 
 #workspaces button.urgent {
-    background: transparent;
     color: @red;
-    font-weight: 700;
 }
 
 #tray menu {
     background-color: @base;
     border: 2px solid @surface0;
     border-radius: 8px;
+	font-size: 10px;
     padding: 6px;
-    font-size: 10px;
 }
 
 #tray menu menuitem {
     background-color: transparent;
+	border-radius: 6px;
     color: @text;
+	margin: 2px 0;
     padding: 6px 10px;
-    border-radius: 6px;
-    margin: 2px 0;
-    font-weight: 600;
 }
 
 #tray menu menuitem:hover {
@@ -111,33 +102,23 @@ label:focus {
 }
 
 #clock {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     color: @text;
-    font-weight: 600;
+	font-size: 15px;
     padding: 0px 10px;
-    font-size: 15px;
 }
 
 #pulseaudio {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @text;
-	padding: 0px 8px;
-	font-weight: 600;
 	font-size: 20px;
+	padding: 0px 8px;
 }
 
 #pulseaudio.muted {
     color: @red;
-    font-weight: 600;
 }
 
 #disk {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @text;
-	font-weight: 600;
 	padding: 0 8px;
 }
 
@@ -150,63 +131,43 @@ label:focus {
 }
 
 #network {
-	background: transparent;
 	color: @text;
+	font-size: 18px;
 	padding: 0 8px;
 	padding-right: 13px;
-	font-weight: 600;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-	font-size: 18px;
 }
 
 #custom-menu {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @blue;
+	font-size: 35px;
 	margin-left: 20px;
 	padding-left: 0px;
 	padding-right: 12px;
-	font-size: 35px;
 }
 
 #custom-gear {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @overlay0;
+	font-size: 30px;
 	margin: 0 20px;
 	padding-right: 14px;
-	font-size: 30px;
 }
 
 #custom-home {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @subtext1;
-	padding-right: 16px;
 	font-size: 30px;
+	padding-right: 16px;
 }
 
 #custom-browser {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @peach;
-	padding-right: 12px;
-	margin-left: 20px;
 	font-size: 30px;
+	margin-left: 20px;
+	padding-right: 12px;
 }
 
 #custom-steam {
-	background: transparent;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	color: @subtext1;
-	padding-right: 12px;
-	margin-left: 20px;
 	font-size: 30px;
-}
-
-@keyframes blink {
-    to {
-        background-color: @mantle;
-        color: @text;
-    }
+	margin-left: 20px;
+	padding-right: 12px;
 }
