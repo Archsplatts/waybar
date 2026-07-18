@@ -1,0 +1,16 @@
+{
+	"include": ["$HOME/.config/mango/waybar/modules/*.jsonc"],
+
+	"layer": "top",
+	"position": "top",
+	"height": 30,
+	"spacing": 0,
+	"reload_style_on_change": true,
+	
+	"modules-left": ["ext/workspaces","custom/circle"],
+
+	"modules-center": ["custom/circle8","custom/updates","custom/circle2","pulseaudio","custom/circle3","custom/menu",
+	"custom/circle4","clock","custom/circle5","disk#ssd","custom/circle7"],
+	
+	"modules-right": ["custom/circle6","wlr/taskbar","tray","network"],
+}

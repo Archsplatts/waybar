@@ -1,0 +1,239 @@
+@import "colors.css";
+
+* {
+    border: none;
+    font-family: UbuntuMono Nerd Font, Font Awesome;
+    font-size: 16px;
+    min-height: 0;
+	margin: 0px;
+    padding: 0px;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.9);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+   	color: @text;
+}
+
+tooltip {
+    background-color: @base;
+    border: 1px solid @surface1;
+    border-radius: 6px;
+}
+
+tooltip label {
+    color: @text;
+    margin: 4px;
+    padding: 4px;
+}
+
+label:focus {
+    background-color: @mantle;
+}
+
+#tray {
+	background: @surface1;
+    padding: 0px 8px;
+    margin: 5px 0;
+}
+
+#custom-menu {
+	background: @blue;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: @text;
+	padding-left: 5px;
+	padding-right: 14px;
+	margin: 5px 0;
+	font-size: 20px;
+}
+
+#custom-circle {
+	background: @base;
+	color: @surface0;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle2 {
+	background: @overlay0;
+	color: @surface1;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle3 {
+	background: @surface1;
+	color: @blue;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle4 {
+	background: @surface1;
+	color: @blue;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle5 {
+	background: @overlay0;
+	color: @surface1;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle6 {
+	background: @base;
+	color: @surface1;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle7 {
+	background: @base;
+	color: @overlay0;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#custom-circle8 {
+	background: @base;
+	color: @overlay0;
+	margin: 5px 0;
+	font-size: 22px;
+}
+
+#workspaces {
+	background: @surface0;
+	margin: 4px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#workspaces button {
+    background: transparent;
+    color: @overlay1;
+    border-radius: 4px;
+    margin: 4px 2px;
+    padding: 0px;
+    padding-right: 5px;
+    min-width: 18px;
+}
+
+#workspaces button.active {
+    color: @blue;
+    background: transparent;
+    font-weight: 700;
+}
+
+#workspaces button.urgent {
+    background: transparent;
+    color: @red;
+    font-weight: 700;
+}
+
+#tray menu {
+    background-color: @base;
+    border: 2px solid @surface0;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 10px;
+}
+
+#tray menu menuitem {
+    background-color: transparent;
+    color: @text;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 2px 0;
+    font-weight: 600;
+}
+
+#tray menu menuitem:hover {
+    background-color: transparent;
+    color: @blue;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @mantle;
+}
+
+#taskbar {
+	background: @surface1;
+	margin: 5px 0;
+}
+
+#taskbar button {
+	padding: 0 5px;
+}
+
+#clock {
+	background: @surface1;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: @text;
+    font-weight: 600;
+    margin: 5px 0;
+    padding: 0px 8px;
+}
+
+#pulseaudio {
+	background: @surface1;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: @text;
+	padding: 0px 8px;
+	font-weight: 600;
+	margin: 5px 0;
+}
+
+#pulseaudio.muted {
+    color: @red;
+    font-weight: 600;
+}
+
+#custom-updates {
+	background: @overlay0;
+	margin: 5px 0;
+	color: @green;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	padding: 0px 20px;
+	padding-left: 12px;
+	font-size: 18px;
+}
+
+#disk {
+	background: @overlay0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	color: @text;
+	margin: 5px 0;
+	font-weight: 600;
+	padding: 0 8px;
+}
+
+#disk.warning span {
+	color: @peach;	
+}
+
+#disk.critical span {
+	color: @red;	
+}
+
+#network {
+	background: @surface1;
+	color: @text;
+	padding: 0 8px;
+	padding-right: 13px;
+	font-weight: 600;
+	margin: 5px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes blink {
+    to {
+        background-color: @mantle;
+        color: @text;
+    }
+}
