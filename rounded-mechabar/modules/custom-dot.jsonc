@@ -1,33 +1,41 @@
 {
 	"custom/circle": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle2": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle3": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle4": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle5": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle6": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle7": {
-			"format": ""
+		"format": "",
+		"tooltip": false
 	},
 
 	"custom/circle8": {
-		"format": ""
+		"format": "",
+		"tooltip": false
 	}
 }
