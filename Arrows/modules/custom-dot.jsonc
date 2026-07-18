@@ -1,0 +1,30 @@
+{
+	"custom/dot": {
+		"format": "/",	
+	},
+
+	"custom/dot2": {
+		"format": "|",	
+	},
+
+	"custom/dot3": {
+		"format": "",
+	},
+
+	"custom/dot4": {
+		"format": ""	
+	},
+
+	"custom/dot5": {
+		"format": ""
+	},
+
+	"custom/dot6": {
+		"format": ""
+	},
+
+	"custom/dot7": {
+		"format": ""
+	}
+
+}
